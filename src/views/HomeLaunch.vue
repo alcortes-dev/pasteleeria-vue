@@ -1,0 +1,72 @@
+<template>
+  <article>
+    <h2>Sobre nosotros</h2>
+    <p>
+      Somos una pastelería con 20 años de experiencia en la repostería y las
+      letras.
+    </p>
+    <p>
+      Ubicados en el corazón de la CDMX, estamos disponibles para llevar alegría
+      a sus celebraciones.
+    </p>
+  </article>
+  <article>
+    <h2>Nuestros sabores</h2>
+    <p>
+      Actualmente contamos con tres sabores que pueden ser combinados para el
+      disfrute de tu paladar.
+    </p>
+    <table>
+      <tr>
+        <th>Sabor</th>
+        <th>Descripción</th>
+        <td>Unidad</td>
+        <td>Precio</td>
+      </tr>
+      <tr>
+        <th>Chocolate</th>
+        <td>Delicioso chocolate amargo de la más alta calidad</td>
+        <td>KG</td>
+        <td>$180</td>
+      </tr>
+      <tr>
+        <th>Vainilla</th>
+        <td>Pan tradicional con escencia de vainilla natural</td>
+        <td>KG</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <th>Tres leches</th>
+        <td>Pan bañado con una mescla de 3 leches.</td>
+        <td>KG</td>
+        <td>$180</td>
+      </tr>
+    </table>
+  </article>
+  <article>
+    <h2>Nuestros adornos</h2>
+    <table>
+      <tr>
+        <th>Adorno</th>
+        <th>Unidad</th>
+        <th>Precio</th>
+      </tr>
+      <tr>
+        <th>Chantillty</th>
+        <td>cm2</td>
+        <td>$10</td>
+      </tr>
+      <tr>
+        <th>Merengue</th>
+        <td>cm2</td>
+        <td>$15</td>
+      </tr>
+    </table>
+  </article>
+</template>
+
+<script>
+export default {
+  name: "HomeLaunch",
+};
+</script>

@@ -1,30 +1,104 @@
 <template>
+  <HeaderMain />
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view />
+  <FooterMain />
 </template>
 
+<script>
+import HeaderMain from "./components/Header.vue";
+import FooterMain from "./components/Footer.vue";
+export default {
+  components: {
+    HeaderMain,
+    FooterMain,
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  box-sizing: border-box;
 }
 
-nav {
-  padding: 30px;
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 180px;
 }
 
-nav a {
+header {
+  width: 100%;
+  background-color: cadetblue;
+  color: white;
+}
+
+header > div {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+}
+header h1 img {
+  max-width: 300px;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+}
+
+header li a {
+  text-decoration: none;
+  background-color: darkcyan;
+  color: white;
   font-weight: bold;
-  color: #2c3e50;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+h2 {
+  background-color: aquamarine;
+  padding: 5px 10px;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+footer > div {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+footer .columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: block;
 }
 </style>
